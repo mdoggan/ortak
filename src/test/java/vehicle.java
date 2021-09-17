@@ -1,10 +1,12 @@
 public class vehicle {
-    String name;
+    public String name;
     private int size;
     private int velocity;
     private int currentVelocity;
     private int currentDriction;
     int time =10;
+
+
 
     public vehicle(String name, int size) {
 
@@ -23,6 +25,7 @@ public class vehicle {
         System.out.println("current velocity"+currentVelocity);
     }
     public int move(int currentVelocity, int time){
+        System.out.println("from vehicle");
         int distance=currentVelocity*time;
         return distance;
 
